@@ -68,7 +68,7 @@ const validateTweet = [
 router.get('/', isAuth, tweetController.getTweets);
 // GET
 // /tweets/:id
-router.get('/:id', isAuth, tweetController.getTweets);
+router.get('/:id', isAuth, tweetController.getTweet);
 // text가 4자이하인 경우 에러처리
 // POST
 // id: Date.now().toString()
